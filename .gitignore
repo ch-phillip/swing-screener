@@ -1,0 +1,15 @@
+# 구글 서비스 계정 키 (절대 커밋하면 안 됨)
+service_account.json
+*.json
+
+# 로컬 메모/비밀번호 평문 파일 (커밋 금지)
+*.text
+aa.text
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
