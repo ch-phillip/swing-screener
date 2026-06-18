@@ -40,6 +40,8 @@ jobs:
           KRX_PW: ${{ secrets.KRX_PW }}
           GOOGLE_CREDENTIALS_JSON: ${{ inputs.dry_run == 'true' && '' || secrets.GOOGLE_CREDENTIALS_JSON }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python swing_screener.py
 
       - name: 실행 결과 요약
